@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "57debdea-a688-46ca-b52d-f26dd78ed7dc": {
+      "ProjectGuid": "57debdea-a688-46ca-b52d-f26dd78ed7dc",
+      "DisplayName": "SendMessToRabbitLocal",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

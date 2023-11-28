@@ -1,0 +1,35 @@
+﻿@*@model IEnumerable<ReWeight.Models.ControlPoint>*@
+@using ReWeight.Models
+@{
+    ViewBag.Title = "Все контрольные точки";
+}
+<h2>Контрольные пункты</h2>
+
+
+<a asp-action="Create">Добавить контрольную точку</a>
+<table class="table">
+
+    <tr>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.RegionSort">
+                Регион
+            </a>
+        </th>
+    </tr>
+    @foreach (ControlPoint item in Model)
+    {
+
+<tr>
+    <td>@item.Region.Name</td>
+    <td><td>КТ</td><td>@item.ControlPointId</td>
+    <td>@item.Name</td>
+    <td>@item.IpVpn</td>
+
+    <td>
+        <a asp-action="Details" asp-controller="Home" asp-route-id="@item.Id">Подробнее</a> |
+        <a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Изменить</a> |
+        <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a>
+    </td>
+</tr>
+    }
+</table>

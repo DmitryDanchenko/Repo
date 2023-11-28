@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "MS4naLMKDm4kkHap4CznzzndaCcAyGDoPm2fxoP8TZCfGggXMoeyS4kFjYbaxCkByZem5R3WF038l5qQlZq8kw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMsgToRabbit\\SendMsgToRabbit\\SendMsgToRabbit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Demon\\.nuget\\packages\\microsoft.csharp\\4.4.1\\microsoft.csharp.4.4.1.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0-preview6.19304.6\\microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview6.19304.6.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\microsoft.extensions.objectpool\\6.0.5\\microsoft.extensions.objectpool.6.0.5.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\microsoft.extensions.options\\3.0.0-preview6.19304.6\\microsoft.extensions.options.3.0.0-preview6.19304.6.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0-preview6.19304.6\\microsoft.extensions.primitives.3.0.0-preview6.19304.6.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\rabbitmq.client\\6.3.0\\rabbitmq.client.6.3.0.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.commandline.dragonfruit\\0.2.0-alpha.19174.3\\system.commandline.dragonfruit.0.2.0-alpha.19174.3.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.commandline.experimental\\0.2.0-alpha.19174.3\\system.commandline.experimental.0.2.0-alpha.19174.3.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.commandline.rendering\\0.2.0-alpha.19174.3\\system.commandline.rendering.0.2.0-alpha.19174.3.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0-preview6.19303.8\\system.componentmodel.annotations.4.6.0-preview6.19303.8.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0-preview6.19303.8\\system.runtime.compilerservices.unsafe.4.6.0-preview6.19303.8.nupkg.sha512",
+    "C:\\Users\\Demon\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

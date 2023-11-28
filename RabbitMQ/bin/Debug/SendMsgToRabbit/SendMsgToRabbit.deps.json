@@ -1,0 +1,229 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SendMsgToRabbit/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.ObjectPool": "6.0.5",
+          "Microsoft.Extensions.Options": "3.0.0-preview6.19304.6",
+          "Newtonsoft.Json": "13.0.1",
+          "RabbitMQ.Client": "6.3.0",
+          "System.CommandLine.DragonFruit": "0.2.0-alpha.19174.3",
+          "System.CommandLine.Experimental": "0.2.0-alpha.19174.3"
+        },
+        "runtime": {
+          "SendMsgToRabbit.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.4.1": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview6.19304.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.ObjectPool/6.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview6.19304.6",
+          "Microsoft.Extensions.Primitives": "3.0.0-preview6.19304.6",
+          "System.ComponentModel.Annotations": "4.6.0-preview6.19303.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview6.19304.6": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview6.19303.8"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.30406"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "RabbitMQ.Client/6.3.0": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Threading.Channels": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.3.0.0"
+          }
+        }
+      },
+      "System.CommandLine.DragonFruit/0.2.0-alpha.19174.3": {
+        "dependencies": {
+          "System.CommandLine.Experimental": "0.2.0-alpha.19174.3",
+          "System.CommandLine.Rendering": "0.2.0-alpha.19174.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CommandLine.DragonFruit.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.19.17403"
+          }
+        }
+      },
+      "System.CommandLine.Experimental/0.2.0-alpha.19174.3": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CommandLine.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.19.17403"
+          }
+        }
+      },
+      "System.CommandLine.Rendering/0.2.0-alpha.19174.3": {
+        "dependencies": {
+          "System.CommandLine.Experimental": "0.2.0-alpha.19174.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CommandLine.Rendering.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.19.17403"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/4.6.0-preview6.19303.8": {},
+      "System.Memory/4.5.4": {},
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview6.19303.8": {},
+      "System.Threading.Channels/4.7.1": {}
+    }
+  },
+  "libraries": {
+    "SendMsgToRabbit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A5hI3gk6WpcBI0QGZY6/d5CCaYUxJgi7iENn1uYEng+Olo8RfI5ReGVkjXjeu3VR3srLvVYREATXa2M0X7FYJA==",
+      "path": "microsoft.csharp/4.4.1",
+      "hashPath": "microsoft.csharp.4.4.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g2M6hgbjj+XFiohKnNBJ/7DjPhVfp4HEe+wbXIEVSfA1HkT40/aHiXY/7ynkndEXXBaTgj6OYtj89iDyTKSsEw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ObjectPool/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JS6sDBCRuvqdBEmC+BPPSM3erqa2YwGTitNGR7bgge/03z8iul/sn0i3A2gWTlpQc8ruEHMSdwTb/WSpvOyYAA==",
+      "path": "microsoft.extensions.objectpool/6.0.5",
+      "hashPath": "microsoft.extensions.objectpool.6.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KfCOcw5FcwZA+VXkWK9tVoFglHY8+mhV+Xbqlbu89hTy9xHSDMr0JwLWlf3pvvlz4+fASI1LQKp6QOHZTbfHeQ==",
+      "path": "microsoft.extensions.options/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.options.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.0.0-preview6.19304.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A7j/haTP/2UQj0R/4Rh24NAjViHd8+1OB1oXGSqKCDONIb5LCMKc6qhP+kN5cbYXHUfcUz97FS/BPRGaNxBLDg==",
+      "path": "microsoft.extensions.primitives/3.0.0-preview6.19304.6",
+      "hashPath": "microsoft.extensions.primitives.3.0.0-preview6.19304.6.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "RabbitMQ.Client/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aKDH8lyNIRkouDvJJD3xd6222z6qCK8+Lyb/lRQRO1QxN7hsTgPWtkezMmXmA7t1NsDLUwIWEJj8xYQtMt0tnQ==",
+      "path": "rabbitmq.client/6.3.0",
+      "hashPath": "rabbitmq.client.6.3.0.nupkg.sha512"
+    },
+    "System.CommandLine.DragonFruit/0.2.0-alpha.19174.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YtwUWDTkIaj9bUnF7/xifxZ04gp6XKF27Y8EmZpwjMpDeSh+V9uOVjtC1O3BAwQlst4Nr5d3Ytn02aWPOu82YQ==",
+      "path": "system.commandline.dragonfruit/0.2.0-alpha.19174.3",
+      "hashPath": "system.commandline.dragonfruit.0.2.0-alpha.19174.3.nupkg.sha512"
+    },
+    "System.CommandLine.Experimental/0.2.0-alpha.19174.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PTJCVcj0rkIYPZzKZbU4uLdEvosmnX2CQR98rY6+efIn96zRtbljl74sPFRFZlLxeLprt42FeZNsYH+QdxCHPA==",
+      "path": "system.commandline.experimental/0.2.0-alpha.19174.3",
+      "hashPath": "system.commandline.experimental.0.2.0-alpha.19174.3.nupkg.sha512"
+    },
+    "System.CommandLine.Rendering/0.2.0-alpha.19174.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TbLA9yUwzdd/DRlyWS53x/NlOkJ0k1WI+YE8Ne2w/Wk+H9w3XqzRBVZBoL7b2JpHvW2s0mNi4tQRCCi5qgmxkQ==",
+      "path": "system.commandline.rendering/0.2.0-alpha.19174.3",
+      "hashPath": "system.commandline.rendering.0.2.0-alpha.19174.3.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.6.0-preview6.19303.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q5NUReQpwGjPTm1uhKyNfvbVqNn9pQ46L4Lxkz/+hCoRsMJQkI3Acbh6E57SjJ1hn5hcTv4yy9bqqpDK06UPoQ==",
+      "path": "system.componentmodel.annotations/4.6.0-preview6.19303.8",
+      "hashPath": "system.componentmodel.annotations.4.6.0-preview6.19303.8.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview6.19303.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wfz/0mE6+PUKIfD0AbLxas9kH49AwSvwPi2m9ppU6cvrgib3r95MHIrmKNLnF8PNvRVurdUlatP6D8PEyEuzZQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview6.19303.8",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview6.19303.8.nupkg.sha512"
+    },
+    "System.Threading.Channels/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
+      "path": "system.threading.channels/4.7.1",
+      "hashPath": "system.threading.channels.4.7.1.nupkg.sha512"
+    }
+  }
+}

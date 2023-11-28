@@ -1,0 +1,59 @@
+﻿@model ReWeight.Models.ControlPoint
+
+@{
+    ViewBag.Title = "Добавление контрольной точки";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="ControlPointId" class="control-label">Id контрольной точки</label>
+        <input type="text" asp-for="ControlPointId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Имя</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Iplokal" class="control-label">локальный Ip</label>
+        <input type="text" asp-for="Iplokal" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="IpVpn" class="control-label">Ip Vpn</label>
+        <input type="text" asp-for="IpVpn" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="IPMI" class="control-label">IPMI</label>
+        <input type="text" asp-for="IPMI" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Region.Name" class="control-label">регион</label>
+        <input type="text" asp-for="Region.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Region.IpEmoiv" class="control-label">Ip Emoiv</label>
+        <input type="text" asp-for="Region.IpEmoiv" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Links.Nomad" class="control-label">ccылка на страницу Nomad</label>
+        <input type="text" asp-for="Links.Nomad" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Links.ConsulDataCapture" class="control-label">ccылка на страницу Consul (config DataCaptere)</label>
+        <input type="text" asp-for="Links.ConsulDataCapture" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Links.SGDK" class="control-label">ccылка на страницу Consul (config SGDK)</label>
+        <input type="text" asp-for="Links.SGDK" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Links.Сoefficients" class="control-label">ccылка на страницу Consul с функциональными поправками</label>
+        <input type="text" asp-for="Links.Сoefficients" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Information" class="control-label">информация</label>
+        <input type="text" asp-for="Information" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>
+

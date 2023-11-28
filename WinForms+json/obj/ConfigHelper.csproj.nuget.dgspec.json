@@ -1,0 +1,828 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Tools\\ConfigHelper\\ConfigHelper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj": {
+      "version": "1.2.10.8973",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj",
+        "projectName": "CvLab.Common",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj",
+        "projectName": "CvLab.Framework.Standard",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1803"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            },
+            "CvLab.Framework.Rebus": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.Graylog": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Serilog.Sinks.Literate": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Sinks.RollingFileSizeLimit": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "lz4net.Recompiled": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\CvLab.Tensor.CommonLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\CvLab.Tensor.CommonLib.csproj",
+        "projectName": "CvLab.Tensor.CommonLib",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\CvLab.Tensor.CommonLib.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\CvLab.Tensor.DataCaptureCommonLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\CvLab.Tensor.DataCaptureCommonLib.csproj",
+        "projectName": "CvLab.Tensor.DataCaptureCommonLib",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\CvLab.Tensor.DataCaptureCommonLib.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj"
+              },
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\CvLab.Tensor.TrainDatasetsDbController.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\CvLab.Tensor.TrainDatasetsDbController.csproj"
+              },
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.1-dev-01265, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\CvLab.Tensor.TrainDatasetsDbController.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\CvLab.Tensor.TrainDatasetsDbController.csproj",
+        "projectName": "CvLab.Tensor.TrainDatasetsDbController",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\CvLab.Tensor.TrainDatasetsDbController.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsDbController\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\CvLab.Tensor.TrainDatasetsLib.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\CvLab.Tensor.TrainDatasetsLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.110, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\CvLab.Tensor.TrainDatasetsLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\CvLab.Tensor.TrainDatasetsLib.csproj",
+        "projectName": "CvLab.Tensor.TrainDatasetsLib",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\CvLab.Tensor.TrainDatasetsLib.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.TrainDatasetsLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              },
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\CvLab.Tensor.CommonLib.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.CommonLib\\CvLab.Tensor.CommonLib.csproj"
+              },
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj",
+        "projectName": "CvLab.TensorCore",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\CvLab.TensorCore.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\CvLab.TensorCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Common\\CvLab.Common\\CvLab.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.4, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "EntityFrameworkCore.FirebirdSQL": {
+              "target": "Package",
+              "version": "[2.1.2.2, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Svg": {
+              "target": "Package",
+              "version": "[3.2.3, )"
+            },
+            "UnidecodeSharpCore": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Tools\\ConfigHelper\\ConfigHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Tools\\ConfigHelper\\ConfigHelper.csproj",
+        "projectName": "ConfigHelper",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Tools\\ConfigHelper\\ConfigHelper.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Tools\\ConfigHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss4\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\CvLab.Tensor.DataCaptureCommonLib.csproj": {
+                "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss4\\CvLab.Tensor\\Core\\CvLab.Tensor.DataCaptureCommonLib\\CvLab.Tensor.DataCaptureCommonLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.100.3, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1001, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

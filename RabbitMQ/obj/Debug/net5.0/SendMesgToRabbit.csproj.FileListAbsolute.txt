@@ -1,0 +1,4 @@
+C:\Users\Demon\source\repos\ppss\CvLab.Tensor\Tools\SendMessToRabbitLocal\SendMessToRabbitLocal\obj\Debug\net5.0\SendMesgToRabbit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Demon\source\repos\ppss\CvLab.Tensor\Tools\SendMessToRabbitLocal\SendMessToRabbitLocal\obj\Debug\net5.0\SendMesgToRabbit.AssemblyInfoInputs.cache
+C:\Users\Demon\source\repos\ppss\CvLab.Tensor\Tools\SendMessToRabbitLocal\SendMessToRabbitLocal\obj\Debug\net5.0\SendMesgToRabbit.AssemblyInfo.cs
+C:\Users\Demon\source\repos\ppss\CvLab.Tensor\Tools\SendMessToRabbitLocal\SendMessToRabbitLocal\obj\Debug\net5.0\SendMesgToRabbit.csproj.CoreCompileInputs.cache

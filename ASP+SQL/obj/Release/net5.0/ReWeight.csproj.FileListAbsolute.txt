@@ -1,0 +1,8 @@
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.AssemblyInfo.cs
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.RazorAssemblyInfo.cache
+C:\Users\admin\source\repos\CommonLegacy\ReWeight\obj\Release\net5.0\ReWeight.RazorAssemblyInfo.cs

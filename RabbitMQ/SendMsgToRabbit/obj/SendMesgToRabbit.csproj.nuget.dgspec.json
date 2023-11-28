@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMessToRabbitLocal\\SendMessToRabbitLocal\\SendMesgToRabbit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMessToRabbitLocal\\SendMessToRabbitLocal\\SendMesgToRabbit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMessToRabbitLocal\\SendMessToRabbitLocal\\SendMesgToRabbit.csproj",
+        "projectName": "SendMesgToRabbit",
+        "projectPath": "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMessToRabbitLocal\\SendMessToRabbitLocal\\SendMesgToRabbit.csproj",
+        "packagesPath": "C:\\Users\\Demon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Demon\\source\\repos\\ppss\\CvLab.Tensor\\Tools\\SendMessToRabbitLocal\\SendMessToRabbitLocal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Demon\\source\\repos\\ppss\\NuGet.Config",
+          "C:\\Users\\Demon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.ObjectPool": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.0.0-preview6.19304.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "System.CommandLine.DragonFruit": {
+              "target": "Package",
+              "version": "[0.2.0-alpha.19174.3, )"
+            },
+            "System.CommandLine.Experimental": {
+              "target": "Package",
+              "version": "[0.2.0-alpha.19174.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\ReWeight\\ReWeight.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\CvLab.Framework.Extensions.FFmpeg.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\CvLab.Framework.Extensions.FFmpeg.csproj",
+        "projectName": "CvLab.Framework.Extensions.FFmpeg",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\CvLab.Framework.Extensions.FFmpeg.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj",
+        "projectName": "CvLab.Framework.Standard",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "BouncyCastle.NetCore": {
+              "target": "Package",
+              "version": "[1.8.5, )"
+            },
+            "Consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            },
+            "CvLab.Framework.Rebus": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
+            "LiteDB": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0-preview7.19362.4, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0-preview7.19362.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.0.0-preview6.19304.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Xml": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.Graylog": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Serilog.Sinks.Literate": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Sinks.RollingFileSizeLimit": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "lz4net.Recompiled": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\CvLab.LazerStockCtrl.Common.Standard.csproj": {
+      "version": "1.2.10.8973",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\CvLab.LazerStockCtrl.Common.Standard.csproj",
+        "projectName": "CvLab.LazerStockCtrl.Common.Standard",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\CvLab.LazerStockCtrl.Common.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\CvLab.Framework.Extensions.FFmpeg.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Extensions.FFmpeg\\CvLab.Framework.Extensions.FFmpeg.csproj"
+              },
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              },
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\RailOCR.Data.Common.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\RailOCR.Data.Common.Standard.csproj"
+              },
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\TechnoVisor.Data.Common.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\TechnoVisor.Data.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Destructurama.Attributed": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "ExifLib.Standard": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "FastMember": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\RailOCR.Data.Common.Standard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\RailOCR.Data.Common.Standard.csproj",
+        "projectName": "RailOCR.Data.Common.Standard",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\RailOCR.Data.Common.Standard.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.RailOCR\\RailOCR.Data.Common.Standard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\TechnoVisor.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\TechnoVisor.Data.Common.csproj",
+        "projectName": "TechnoVisor.Data.Common",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\TechnoVisor.Data.Common.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.TechnoVisor\\TechnoVisor.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.Framework\\CvLab.Framework.Standard\\CvLab.Framework.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "SerilogAnalyzer": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\source\\repos\\CommonLegacy\\ReWeight\\ReWeight.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\ReWeight\\ReWeight.csproj",
+        "projectName": "ReWeight",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\ReWeight\\ReWeight.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\ReWeight\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\source\\repos\\CommonLegacy\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.20.61:5000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\CvLab.LazerStockCtrl.Common.Standard.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\CommonLegacy\\CvLab.LazerStockCtrl\\CvLab.LazerStockCtrl.Common.Standard\\CvLab.LazerStockCtrl.Common.Standard.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CvLab.Framework.Rebus": {
+              "target": "Package",
+              "version": "[1.0.11, )"
+            },
+            "Microsoft.AspNetCore.Server.HttpSys": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

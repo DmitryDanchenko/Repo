@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <History>True|2021-08-25T14:47:34.7771738Z;True|2021-08-25T17:27:45.1214415+03:00;True|2021-08-25T11:08:07.2418637+03:00;True|2021-08-25T11:04:49.1802820+03:00;True|2021-08-24T15:01:27.1367159+03:00;True|2021-07-30T19:43:09.2848439+03:00;False|2021-07-30T19:42:07.5988987+03:00;True|2021-07-30T19:06:20.9582316+03:00;True|2021-07-30T19:00:56.2388085+03:00;False|2021-07-30T18:55:32.5809470+03:00;False|2021-07-30T18:45:59.0040721+03:00;False|2021-07-30T18:41:48.8146118+03:00;</History>
+    <_PublishTargetUrl>C:\Users\admin\source\repos\CommonLegacy\ReWeight\bin\Debug\net5.0\publish2\</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

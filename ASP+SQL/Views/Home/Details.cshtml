@@ -1,0 +1,43 @@
+﻿@model ReWeight.Models.ControlPoint
+@using ReWeight.Models
+@{
+    ViewBag.Title = Model.Name;
+}
+<h2>Контрольная точка @Model.Name</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>Регион</dt>
+        <dd>@Model.Region.Name</dd>
+
+        <dt>Ip Emoiv</dt>
+        <dd>@Model.Region.IpEmoiv</dd>
+
+        <dt>Id контрольной точки</dt>
+        <dd>@Model.ControlPointId</dd>
+
+        <dt>Ip Vpn</dt>
+        <dd>@Model.IpVpn</dd>
+
+        <dt>Локальный Ip</dt>
+        <dd>@Model.Iplokal</dd>
+
+        <dt>IPMI</dt>
+        <dd>@Model.IPMI</dd>
+
+
+        <dd><a href="@Model.Links.Nomad" target="_blank">Nomad</a></dd>
+
+        <dd> <a href="@Model.Links.ConsulDataCapture" target="_blank">Consul DataCapture</a></dd>
+
+        <dd> <a href="@Model.Links.SGDK" target="_blank">Consul SGDK</a></dd>
+
+        <dd><a href="@Model.Links.Сoefficients" target="_blank">Функциональные поправки</a></dd>
+
+        <dd><a asp-action="GetOsc" asp-controller="Home" asp-route-id="@Model.Id">Получить осцилограммы</a></dd>
+
+        <dd><a asp-action="InterReWeight" asp-controller="Home" asp-route-id="@Model.Id">Отправить сообщение</a></dd>
+
+<dt>Дополнительная информация</dt>
+        <dd>@Model.Information</dd>
+    </dl>
+</div>

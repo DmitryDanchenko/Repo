@@ -1,0 +1,2981 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CvLab.Common</name>
+    </assembly>
+    <members>
+        <member name="T:CvLab.Common.Attributes.ColoredAttribute">
+            <summary>
+                Аттрибут, который подсказывает UI, какой показатель следует выделять цветом и какое поле делать определяющим
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="M:CvLab.Common.Attributes.ColoredAttribute.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:CvLab.Common.Attributes.ColoredAttribute"/> class.
+                Поле отмеченое этим аттрибутом красится по уровням AlarmLevel всего отчета
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Attributes.ColoredAttribute.#ctor(System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:CvLab.Common.Attributes.ColoredAttribute"/> class.
+                Поле помеченое этим аттрибутом красится по уровням AssociatedAlarmLevelProperty
+            </summary>
+            <param name="associatedAlarmLevelProperty">The associated alarm level property.</param>
+        </member>
+        <member name="T:CvLab.Common.Attributes.ConcomitantResourceAttribute">
+            <summary>
+                Вспомогательный аттрибут для привязки медиа к отчету
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Attributes.ConcomitantResourceAttribute.#ctor(System.String,System.String,CvLab.Common.Core.Enums.ConcomitantResourceType)">
+            <summary>
+                Аттрибут, помогающий пользовательскому интефрейсу сконструировать запрос на получение медиа информации по отчету
+            </summary>
+            <param name="resourceName"></param>
+            <param name="resourceExt"></param>
+            <param name="resourceType"></param>
+        </member>
+        <member name="M:CvLab.Common.Attributes.IssueCategoryAttribute.#ctor(CvLab.Common.Core.Enums.IssueCategory)">
+            <summary>
+                Initializes a new instance of the <see cref="T:CvLab.Common.Attributes.ColoredAttribute"/> class.
+                Поле помеченое этим аттрибутом красится по уровням AssociatedAlarmLevelProperty
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Attributes.IssueReportRepresentationAttribute">
+            <summary>
+                Аттрибут, несущий информацию о представлении отчета на экране
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Attributes.IssueReportRepresentationAttribute.TooltipRepresentation">
+            <summary>
+                Представление отчета во всплывающей подсказке
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Attributes.IssueReportRepresentationAttribute.GeneralRepresentation">
+            <summary>
+                Представление отчета при просмотре вагона
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Attributes.IssueReportRepresentationAttribute.#ctor(CvLab.Common.Core.Enums.IssueReportRepresentation,CvLab.Common.Core.Enums.IssueReportRepresentation)">
+            <summary>
+                Аттрибут, помогающий пользовательскому интефрейсу сконструировать запрос на получение медиа информации по отчету
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Configurations.InformationProviderConfigMisc.ControlPointConfig">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Configurations.InformationProviderConfigMisc.ControlPointConfig.ControlPointNumber">
+            <summary>
+            Gets or sets the control point identifier.
+            </summary>
+            <value>
+            The control point identifier.
+            </value>
+        </member>
+        <member name="F:CvLab.Common.Constants.DbServiceClientConstants.CommonShardName">
+            <summary>
+                Название записей автоматической регистрации сервисов в консуле
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Constants.DbServiceClientConstants.ControlPointTagTemplate">
+            <summary>
+                Шаблон тэга для сервиса в консуле
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Constants.DbServiceClientConstants.AddressMeta">
+            <summary>
+                Название записи в разделе метаданных, в которой записан адрес сервиса в кластере
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Constants.InformationProviderConstants.CommonShardName">
+            <summary>
+                Название записей автоматической регистрации сервисов в консуле
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Constants.InformationProviderConstants.AddressMeta">
+            <summary>
+                Название записи в разделе метаданных, в которой записан адрес сервиса в кластере
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CameraImages.IsFramesOrderAscending">
+            <summary>
+                Указывает на то, в каком порядке отсортированы кадры, true - хронологический,
+                false - антихронологический
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.CargoETSNG">
+            <summary>
+                Информация по ЕТСНГ груза
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.Code">
+            <summary>
+                Код
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.Name">
+            <summary>
+                Наименование груза
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.Tariff">
+            <summary>
+                Тарифный класс
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.Security">
+            <summary>
+                Охрана
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.DangerFlag">
+            <summary>
+                Опасный
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.CargoETSNG.MVN">
+            <summary>
+                Минимальная весовая норма в тоннах при загрузке в универсальные вагоны (или ГП - по грузоподъемности вагона)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.TrainReport">
+            <summary>
+                Краткий отчет по составу
+            </summary>
+            <value>
+            The train.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.CameraData">
+            <summary>
+                Список изображений по камерам
+            </summary>
+            <value>
+            The camera data.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.WagonModels">
+            <summary>
+                Список 3D моделей повагонно
+            </summary>
+            <value>
+            The wagon models.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.WagonVeils">
+            <summary>
+                Список svg-изображений ворот повагонно
+            </summary>
+            <value>
+            The wagon veils.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.WagonTDynamicsReports">
+            <summary>
+                Список svg-изображений отчетов по отрицательной динамике
+            </summary>
+            <value>
+            The wagon td reports.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.ImagesPack.PathToMtl">
+            <summary>
+                Материалы для различных шаблонов
+            </summary>
+            <value>
+            The path to MTL.
+            </value>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.IssueCategorySwitch">
+            <summary>
+            Класс, расширяющий возможности фильтрации результатов
+            поиска по категории.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.IssueCategorySwitch.IsInclusive">
+            <summary>
+            Свойство отвечает за включение категории в список результатов.
+            </summary>
+            <value>
+              <c>true</c> если категория должна быть в результате; иначе, <c>false</c>.
+            </value>
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.RailOCR.RailOCRIssueType.MissInDeclaration">
+            <summary>
+                Отсутствует в ТГНЛ
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.RailOCR.RailOCRIssueType.MissInActualList">
+            <summary>
+                Отсутствует в фактическом списке натурок
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.RailOCR.RailOCRIssueType.Confused">
+            <summary>
+                Не на своем месте
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.RailOCR.RailOCRTrainReportLine.ActualWagonSKUNumber">
+            <summary>
+                Номер подвижной единицы, который был зафиксирован системой АРНВ
+            </summary>
+            <value>
+            The actual wagon sku number.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.RailOCR.RailOCRTrainReportLine.DeclaredWagonSKUNumber">
+            <summary>
+                Номер подвижной единицы, который был задекларирован на указанной позиции в сопроводительной документации
+            </summary>
+            <value>
+            The declared wagon sku number.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.RailOCR.RailOCRTrainReportLine.WagonIndex">
+            <summary>
+                Порядковый номер ПЕ начиная с 1
+            </summary>
+            <value>
+            The index of the wagon.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.RailOCR.RailOCRTrainReportLine.DistinctIndex">
+            <summary>
+                Радельная нумерация тяговых и обычных ПЕ с 1 каждая
+            </summary>
+            <value>
+            The index of the distinct.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.RailOCR.RailOCRTrainReportLine.IssueType">
+            <summary>
+                Тип неисправности
+            </summary>
+            <value>
+            The type of the issue.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_TRAIN_INDEX">
+            <summary>
+            VARCHAR2(30), -- Индекс поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_TRAIN_NUMBER">
+            <summary>
+            VARCHAR2(20), -- Номер поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_CAR_NUMBER">
+            <summary>
+            VARCHAR2(10), -- Номер вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_CAR_SEQ_NUM">
+            <summary>
+            NUMBER, -- Номер вагона по порядку
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_CAR_CAPACITY">
+            <summary>
+            NUMBER, -- Грузоподъемность вагона (тонн) (по картотечным данным)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_CAR_TARA">
+            <summary>
+            NUMBER, -- Вес тары вагона (кг) (по картотечным данным)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_WEIGHT_NETTO">
+            <summary>
+            NUMBER, -- Вес нетто груза (кг) (по МПД)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_DATE_OPER">
+            <summary>
+            DATE, -- Дата подачи на взвешивание
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_DELTA">
+            <summary>
+            NUMBER -- Допустимое отклонение
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_MPD_NUMBER">
+            <summary>
+            VARCHAR2(20), -- Номер МПД
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_MPD_DATE">
+            <summary>
+            DATE, -- Дата МПД
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_FR_NAME">
+            <summary>
+            VARCHAR2(150), -- Название груза ЕТСНГ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Severstal.SeverstalWagonDTO.SC_FRLOCAL_NAME">
+            <summary>
+            VARCHAR2(20), -- Название местного груза
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.SKAT.IssueReportKTSMDTO">
+            <summary>
+                Модель для общения с системой СКАТ
+            </summary>
+            <seealso cref="T:CvLab.Common.Core.DTO.SKAT.IAggreagateReport" />
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.Technovisor.TechnovisorItemType.Clutch">
+            <summary>
+            Сцепка вагона
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.Technovisor.TechnovisorItemType.Axle">
+            <summary>
+            Букса тележки
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.DTO.Technovisor.TechnovisorItemType.SpringGroup">
+            <summary>
+            Рессорный комплект
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorMeasurement.Name">
+            <summary>
+                Название диагностического измерения
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorMeasurement.Value">
+            <summary>
+               Значения диагностического измерения в человекочитаемом виде
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorReportBlock.Caption">
+            <summary>
+                Наименование объекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorReportBlock.SideC">
+            <summary>
+                Сторона Ч
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorReportBlock.SideN">
+            <summary>
+                Сторона Н
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorReportBlock.Index">
+            <summary>
+            Gets or sets the index.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.Technovisor.TechnovisorTruck.Blocks">
+            <summary>
+            Gets or sets the blocks.
+            </summary>
+            <value>
+            The blocks.
+            </value>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.TrainReportFullDTO">
+            <summary>
+                Информационная выжимка по поезду, не содержащая в себе бинарных данных в виде картинок, svg и т.д.
+                Включает в себя информацию по вагонам
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QControlPointNumbers">
+            <summary>
+                Номера контрольных точек через запятую
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QTrainIndexes">
+            <summary>
+                Номера индексов поездов через запятую
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QSKUNumbers">
+            <summary>
+               Номера вагонов через запятую
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QTrainNumbers">
+            <summary>
+                Номера поездов через запятую.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QAlarmLevels">
+            <summary>
+                Значения уровней тревог через запятую.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainReportQuery.QIssueCategory">
+            <summary>
+                Значения типов тревог через запятую.
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.TrainReportConciseDTO">
+            <summary>
+                 Информационная выжимка по поезду, не содержащая в себе бинарных данных в виде картинок, svg и т.д.
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.TrainStatistics">
+            <summary>
+                Диагностическая информация по поезду
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatistics.TrainId">
+            <summary>
+                Идентификатор связанного поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatistics.PassingDuration">
+            <summary>
+                Время прохождения поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatistics.StocksCount">
+            <summary>
+                Количество ПЕ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatistics.Subsystems">
+            <summary>
+                Статистика по обработке поезда от первой оси
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.TrainStatisticsSubsystem">
+            <summary>
+                Статиска по отработке подсистемы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatisticsSubsystem.IssueCategory">
+            <summary>
+                Категория нарушения
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatisticsSubsystem.IssueName">
+            <summary>
+                Название подсистемы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatisticsSubsystem.ProcessingTimeAverageMinutes">
+            <summary>
+                Время отработки показаний подсистемы на вагон - среднее
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatisticsSubsystem.ProcessingTimeMinMinutes">
+            <summary>
+                Время отработки показаний подсистемы на вагон - самый первый вагон
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.TrainStatisticsSubsystem.ProcessingTimeMaxMinutes">
+            <summary>
+                Время отработки показаний подсистемы в целом для состава (т.е. время, когда последний вагон был обработан)
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.VariableChartPointDTO">
+            <summary>
+            Специализированная структура для удобной десериализации на стороне клиента
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.Wagon3DModelAssetsDTO">
+            <summary>
+                Класс, содержащий в себе полные данные о материалах и моделях
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.WagonReportVU23">
+            <summary>
+                Информация для предзаполенния справки ВУ-23
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.TrainId">
+            <summary>
+                Идентификатор поезда ППСС, к которому относится данный вагон
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.SKUNumber">
+            <summary>
+                Инвентарный номер вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.AdministrationCode">
+            <summary>
+                Код ЖД администрации
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.StationESR">
+            <summary>
+                Код ЕСР станции
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.TrainNumber">
+            <summary>
+                Номер поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.TrainIndex">
+            <summary>
+                Индекс поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.Timestamp">
+            <summary>
+                Дата обнаружения вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.Defects">
+            <summary>
+                Коды выявленных неисправностей
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.RepairCode">
+            <summary>
+                Код вида требуемого ремонта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.MaintenanceCode">
+            <summary>
+                Код вида требуемого технического обслуживания
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.TableNumberPersonnel">
+            <summary>
+                Табельный номер ОРВ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.TableNumberOperator">
+            <summary>
+                Табельный номер оператора
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.RepairStation">
+            <summary>
+                Код станции ремонта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WagonReportVU23.RepairDepot">
+            <summary>
+                Код депо ремонта
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.WeightReportDTO">
+            <summary>
+                Весовая справка по поезду
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.DTO.WeightSheet">
+            <summary>
+                Весовая справка по вагону
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.WagonIndex">
+            <summary>
+                №П/П
+                Номер по порядку
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.SKUNumber">
+            <summary>
+                Вагон
+                Номер вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.AlarmWeightCarrying">
+            <summary>
+                Тревога
+                НВ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.AlarmWeightUnevenness">
+            <summary>
+                Тревога
+                НП
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.Label">
+            <summary>
+                Отметка
+                Номер вагона
+                Например, НВ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.SpeedMeterSecond">
+            <summary>
+                Скорость
+                Скорость в м\с
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.MaxCapacityKg">
+            <summary>
+                Грузоподъёмность по ТГНЛ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.DeclTareWeightKg">
+            <summary>
+                Вес тары в ТГНЛ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.DeclBruttoWeightKg">
+            <summary>
+                Вес НЕТТО ТГНЛ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.DeclNettoWeightKg">
+            <summary>
+                Вес Брутто ТГНЛ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.FactBruttoWeightKg">
+            <summary>
+                БРУТТО СЖДК
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.FactBruttoWeightKgDisplay">
+            <summary>
+                Фактический вес для отображения оператору
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.FactNettoWeightKg">
+            <summary>
+                НЕТТО СЖДК
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.LiftingCapacity">
+            <summary>
+                Разница Вес СЖДК и веса ТГНЛ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.LiftingCapacityAlarm">
+            <summary>
+                Трев. грузоподъемности
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.ExcessCargoWeight">
+            <summary>
+                Отклонение массы груза
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.ExcessCargoWeightAlarm">
+            <summary>
+                Трев. массы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.TruckWeightDiffKg">
+            <summary>
+                Разность по тележкам
+                Данные из функции «НП»      По тележкам
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.DTO.WeightSheet.MeasurementErrorInKg">
+            <summary>
+                Погрешность СЖДК
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.AxisTypeOfDefect">
+            <summary>
+            Тип дефекта, определенный системой
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.AxisTypeOfDefect.None">
+            <summary>
+            нет дефекта
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.AxisTypeOfDefect.TrackingPosition">
+            <summary>
+            Tracking Position defects: inflict head checking and gauge-corner cracking, as well as rail head cracking from shelling and longitudinal fatigue
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.AxisTypeOfDefect.AngleOfAttack">
+             <summary>
+            Angle-of-Attack defects: inflict intermittent crown wear as lateral material flows, lateral fatigue cracking that can lead to rail breaks, and surface breaking cracks that can develop into rail squats
+             </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.AxisTypeOfDefect.Hunting">
+             <summary>
+            Hunting defects: inflict a combination of wear patterns, in particular, repeated flange impacts and scrubbing wear actions against the rail
+             </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.BoardSideGonMode">
+            <summary>
+            сторона, по которой работает алгоритм определения мятости борта и вертикальной динамики 3 типа. Если лазеры далеко от борта, то эти алгоритмы по этой стороне работать не должны.
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.BogieAxisTypeOfDefect">
+            <summary>
+            Тип дефекта, определенный системой
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BogieAxisTypeOfDefect.None">
+            <summary>
+            нет дефекта
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BogieAxisTypeOfDefect.TrackingPosition">
+            <summary>
+            Tracking Position defects: inflict head checking and gauge-corner cracking, as well as rail head cracking from shelling and longitudinal fatigue
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BogieAxisTypeOfDefect.AngleOfAttack">
+             <summary>
+            Angle-of-Attack defects: inflict intermittent crown wear as lateral material flows, lateral fatigue cracking that can lead to rail breaks, and surface breaking cracks that can develop into rail squats
+             </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BogieAxisTypeOfDefect.Hunting">
+             <summary>
+            Hunting defects: inflict a combination of wear patterns, in particular, repeated flange impacts and scrubbing wear actions against the rail
+             </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.BroadcastMessageType">
+            <summary>
+                Тип общего оповещения
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BroadcastMessageType.Banner">
+            <summary>
+                Баннер в виде широкой полосы на весь экран
+                Ставится по умолчанию
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.BroadcastMessageType.Notification">
+            <summary>
+                Выпадающее оповещение
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ConcomitantResourceType.Schema">
+            <summary>
+                Сопутствующая схема в формате svg, jpeg или любом другом подобном
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ConcomitantResourceType.Model3d">
+            <summary>
+                Трехмерная модель к отчету
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ConcomitantResourceType.Materials3d">
+            <summary>
+                Материалы для 3d модели
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.IssueCategory">
+            <summary>
+                Тип тревоги
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Core.Enums.ReasonErrorLkps">
+            <summary>
+            причина не обработки вагона алгоритмом ProcessModelSaga ЛКПС
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ReasonErrorLkps.NoWagonModel">
+            <summary>
+            в документе 2651 нет записи о модели вагона
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ReasonErrorLkps.NoAlgorithmForModel">
+            <summary>
+            модели из документа 2651 нет в списке моделей (dkvgab)
+            необходимо добавить модель.
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ReasonErrorLkps.NoCorrectWagonNumber">
+            <summary>
+            номер вагона определен некорректно. соответственно нет 2651 
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.Core.Enums.ReasonErrorLkps.NoLaserCloud">
+            <summary>
+            лазерная подсистема вернула пустое облако для вагона
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickCommunicator.SetClient(CvLab.Common.Core.Sick.Api.ISickSocketClient)">
+            <summary>
+                Sets the client.
+            </summary>
+            <param name="client">
+                The client.
+            </param>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickCommunicator.TransmitAsync(CvLab.Common.Core.Sick.Telegrams.SickBaseTelegram)">
+            <summary>
+                Transmits a telegram is asynchronous.
+            </summary>
+            <param name="telegram">
+                The telegram.
+            </param>
+            <returns>
+                A transmit <see cref="T:System.Threading.Tasks.Task"/>.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickCommunicator.ReceiveAsync">
+            <summary>
+            Receives a telegram is asynchronous.
+            </summary>
+            <returns>
+                A receive <see cref="T:System.Threading.Tasks.Task"/>.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.InitAsync">
+            <summary>
+                Device initialization
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.StartAsync">
+            <summary>
+                Start reading data from the device
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.StopAsync(System.DateTime)">
+            <summary>
+                Stop reading data from the device
+            </summary>
+            <param name="time">
+                Stop time
+            </param>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.StopStateAsync(System.DateTime)">
+            <summary>
+                ReStart reading data from the device
+            </summary>
+            <param name="time">
+                Stop time
+            </param>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.GetAvailableDataAsync">
+            <summary>
+                Get available data
+            </summary>
+            <returns>
+                Array of calibrated data
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.ReadLastDataRangeAsync(System.Int32)">
+            <summary>
+                Reads the last data range asynchronous.
+            </summary>
+            <param name="count">
+                The count.
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.Clear">
+            <summary>
+                Clear data buffers.
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.GetLastTemporaryDataAsync">
+            <summary>
+                Get the last data from a temporary buffer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickHandler.GetCurrentConfig">
+            <summary>
+            Получить текущие значения конфигурации
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickSocketClient.ConnectAsync(System.Net.IPAddress,System.Int32)">
+            <summary>
+                Connects the asynchronous.
+            </summary>
+            <param name="address">
+                The address.
+            </param>
+            <param name="port">
+                The port.
+            </param>
+            <returns>
+                Connection task.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickSocketClient.DisconnectAsync(System.Boolean)">
+            <summary>
+                Disconnects the asynchronous.
+            </summary>
+            <param name="reuse">
+                if set to <c>true</c> [reuse].
+            </param>
+            <returns>
+                Disonnection task.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickSocketClient.TransmitAsync(System.Byte[])">
+            <summary>
+                Transmites the asynchronous.
+            </summary>
+            <param name="message">
+                The message.
+            </param>
+            <returns>
+                The task of sending a message.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickSocketClient.ReceiveAsync(System.Int32)">
+            <summary>
+                Receives the asynchronous.
+            </summary>
+            <param name="count">
+                The count.
+            </param>
+            <returns>
+                The task of receiving data.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickTelegramFactory.Create(System.String,System.String)">
+            <summary>
+                Create a telegram.
+            </summary>
+            <param name="type">
+                Command type.
+            </param>
+            <param name="command">
+                The command.
+            </param>
+            <returns>
+                The telegram.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickTelegramParser.Create(CvLab.Common.Core.Sick.Telegrams.SickBaseTelegram)">
+            <summary>
+                Creates the specified telegram.
+            </summary>
+            <param name="telegram">
+                The telegram.
+            </param>
+            <returns>
+                An array of bytes, created on the basis of a telegram.
+            </returns>
+        </member>
+        <member name="M:CvLab.Common.Core.Sick.Api.ISickTelegramParser.Parse(System.Byte[])">
+            <summary>
+                Parses the specified message.
+            </summary>
+            <param name="message">
+                The message.
+            </param>
+            <returns>
+                Telegram, created on the basis of an array of bytes.
+            </returns>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511Config.TestingMode">
+            <summary>
+            хранить ли файлы сорцов
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511Config.MaxLaserBufferSize">
+            <summary>
+                Максимальный размер буфера лазеров.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511Config.CircularBufferSize">
+            <summary>
+            Максимальный размер буфера предварительной записи.  на канал! 100 в сек
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511Config.SnowDetectRegion">
+            <summary>
+            регион поиска осадков
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511Config.Towards">
+            <summary>
+            Полигон для поиска встречных составов
+            пример: 800;-4300;800;-5400;5200;-5400;5200;-4300
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.minYCorrection">
+            <summary>
+            предварительное положение для детекта оси на уровне Х=-2000
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.midYCorrection">
+            <summary>
+            предварительное положение для детекта оси на уровне Х=0
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.maxYCorrection">
+            <summary>
+            предварительное положение для детекта оси на уровне Х=2000
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.SizeXCorrection">
+            <summary>
+            полуразмер измерительного учатка
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.DeltaXCorrection">
+            <summary>
+            Разброс  для детектирования оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.DeltaYCorrection">
+            <summary>
+            Разброс  для детектирования оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.ZPozition">
+            <summary>
+            положение оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Sick.Config.Sick511HorizontParameters.HalfMeasureSize">
+            <summary>
+            полуразмер измерительного учатка
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.DatasetEndpointAddress">
+            <summary>
+            Готовая строка запроса датасета для пользователя. Устарело. Не использовать, так как на платах Кукина в этой строке
+            будет указана строка запроса фильтрованных датасетов
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.TrainId">
+            <summary>
+            Идентификатор поезда ППСС, с которым связан данный отчет
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.BrokenSensorsEndpointAddress">
+            <summary>
+            Адрес для скачивания списка коробок и сенсоров, с которых поступает битая информация
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.Direction">
+            <summary>
+            Направление движение состава
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.ControlPointId">
+            <summary>
+            Номер контрольной точки
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.IsPhantomTrain">
+            <summary>
+            Указывает на то, что состав не был зарегистрирован в ППСС
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.DatasetFileName">
+            <summary>
+            Dataset fileName of the file, which will be requested through web API.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.ServiceAddress">
+            <summary>
+            Service address to request the dataset through web API.
+            </summary>
+            <example>1.1.1.1</example>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorDatasetReady`1.ServicePort">
+            <summary>
+            Service port to request the dataset through web API.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Core.Tensor.MsgTensorStartTestTrain.TrainId">
+            <summary>
+                Идентификатор поезда ППСС, с которым связан данный отчет
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.BaseBroadcastMessage">
+            <summary>
+                Глобальное оповещение
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.Message">
+            <summary>
+                Текст сообщения для оповещения
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.BackgroundColor">
+            <summary>
+                Цвет фона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.Dismissable">
+            <summary>
+                Может ли оператор скрыть\отменить это сообщение
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.MessageType">
+            <summary>
+                Тип визуального представления баннера
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.TargetPath">
+            <summary>
+                Регулярное выражение для фильтрации страниц, на которых отображается оповещение
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.Starts">
+            <summary>
+                Дата начала показа уведомлений
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseBroadcastMessage.Ends">
+            <summary>
+                Дата окончания показа уведомлений
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.BaseUser">
+            <summary>
+                User data common for domain and DTO
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseUser.Role">
+            <summary>
+                User role
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.BaseUser.Username">
+            <summary>
+                User display name
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.BroadcastMessage">
+            <inheritdoc cref="T:CvLab.Common.Domain.BaseBroadcastMessage" />
+        </member>
+        <member name="P:CvLab.Common.Domain.BroadcastMessage.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:CvLab.Common.Domain.ConciseControlPoint.ControlPointNumber">
+            <summary>
+                Gets or sets the control point number.
+                Номера контрольных точек связанных объектов должены совпадать.
+                Т.е. если у АРНВ прописана контрольная точка 3. то у связанных с АРНВ системами ППСС или Техновизор должна быть выставлена контрольная точка 1
+            </summary>
+            <value>
+            The control point number.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.ConciseControlPoint.Name">
+            <summary>
+                Gets or sets the name.
+            </summary>
+            <value>
+                The name.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.ControlPoint.Directions">
+            <summary>
+                Подходы, которые обслуживаются данной КТ
+            </summary>
+            <value>
+            The approaching directions.
+            </value>
+        </member>
+        <member name="T:CvLab.Common.Domain.Issues.IssueReport">
+            <summary>
+                Общие данные для всех отчетов по вагону, содержит в себе код отчета и уровень тревоги
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReport.AlarmLevel">
+            <summary>
+                Уровень тревоги
+            </summary>
+            <value>
+                Т0, Т1, T2, ОИ
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReport.Category">
+            <summary>
+                код категории нарушения
+            </summary>
+            <value>
+                <see cref="T:CvLab.Common.Core.Enums.IssueCategory"/>>
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReport.CreationTimestamp">
+            <summary>
+                Дата создания объекта отчета
+                Только для внутреннего использования
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.Issues.IssueReportAlarmPrognosis">
+            <summary>
+                Прогноз тревоги по выделенной подсистеме
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportAlarmPrognosis.TargetCategory">
+            <summary>
+            Прогнозируемая подсистема
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportAlarmPrognosis.EstimatedMileageToService">
+            <summary>
+            Остаток пробега - Оценка пробега до тревоги, тыс. км
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportAlarmPrognosis.EstimatedOverallMileage">
+            <summary>
+            Суммарный пробег - Пробег вагона на момент тревоги, тыс. км
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportAxlePattern.AxleIndexAtWagon">
+            <summary>
+                Номер оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportAxlePattern.NextAxleMm">
+            <summary>
+                Расстояние до следующей оси, мм.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportBodyAnomaly.AnomalyCategory">
+            <summary>
+                Тип дефекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportBodyAnomaly.DefectSize">
+            <summary>
+                Размер дефекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportBodyAnomaly.Side">
+            <summary>
+                Местоположение в вагоне
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportContainerState.ContainerIndex">
+            <summary>
+                порядковый номер груза/контейнера
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportContainerState.ContainerType">
+            <summary>
+                тип груза
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportContainerState.Position">
+            <summary>
+             расстояние от начала платформы до начало контейнера
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportContainerState.Length">
+            <summary>
+             длина контейнера
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.Issues.IssueReportCrossection">
+            <summary>
+              Отчет о проблеме от лазерного сканера
+            </summary>
+            <seealso cref="T:CvLab.Common.Domain.Issues.IssueReport" />
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.HFromRailsMeters">
+            <summary>
+               Height Issue FromRailsMeters
+            </summary>
+            <value>
+                For photo Issue identify
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.DistanceFromAxleMeters">
+            <summary>
+            Gets or sets the x distance from axle meters.
+            </summary>
+            <value>
+            The x distance from axle meters.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.ReferenceValue">
+            <summary>
+            Gets or sets the reference value p.
+            </summary>
+            <value>
+            The reference value p.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.SideIssue">
+            <summary>
+               Side, which marked the Problem
+            </summary>
+            <value>
+               Здесь откорректировать... пока - знак числа. само число - расстояние в метрах от оси.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.Template">
+            <summary>
+            Gets or sets the template.
+            </summary>
+            <value>
+            The template.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportCrossection.ScannerIndex">
+            <summary>
+                Number of laser beam, scanner or whatever else
+            </summary>
+            <value>
+            The source identity.
+            </value>
+        </member>
+        <member name="T:CvLab.Common.Domain.Issues.IssueReportCrossectionVeil">
+            <summary>
+                Информационное сообщение о срабатывании завесы
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.Issues.IssueReportDragArea">
+            <summary>
+                Отчет по аэродинамическому сопротивлению вагона для КСАУСП
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportDragArea.DragAndArea">
+            <summary>
+                Коэффициент аэродинамического сопротивления помноженный на площадь сечения вагона в потоке набегающего воздуха
+                развернутый на 360 градусов с шагом в 5 градусов, 0 сонаправлен с направлением движения вагона, обход по часовой стрелке
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportElement.JointType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportElement.JointState">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportElement.JointModel">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportElement.Measurement">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportElement.RuleCode">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportInterVehicleSpace.TypeOfDefect">
+            <summary>
+            Тип дефекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportInterVehicleSpace.CounterMm">
+            <summary>
+                Размер дефекта в мм
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTI.AxleIndexAtWagon">
+            <summary>
+                Номер оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTI.AxleIndexAtTrain">
+            <summary>
+                Номер оси абсолютный
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.AxleIndexAtWagon">
+            <summary>
+                Номер оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.AxleIndexAtTrain">
+            <summary>
+                Номер оси абсолютный
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.HeatLeftLevel">
+            <summary>
+                Уровень нагрева буксы в уровнях слева
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.HeatLeftDeg">
+            <summary>
+                Уровень нагрева буксы в градусах слева
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.HeatRightLevel">
+            <summary>
+                Уровень нагрева буксы в уровнях справа
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.HeatRightDeg">
+            <summary>
+                Уровень нагрева буксы в градусах справа
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.AxisType">
+            <summary>
+                Тип оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportKTSM.ReportKTSMtormoz">
+            <summary>
+                Дополнительная информация от КТСМа
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTb.SIPB">
+            <summary>
+                Показатель Сипб
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTb.PIPB">
+            <summary>
+                Показатель Пипб
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.AxisAtWagon">
+            <summary>
+                Номер оси в вагоне
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.Side">
+            <summary>
+                Сторона вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.UpperBrakeShoeThicknessMm">
+            <summary>
+                Данные по верхней части колодки
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.LowerBrakeShoeThicknessMm">
+            <summary>
+                Данные по нижней части колодки
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.UpperBrakeShoeImageReference">
+            <summary>
+            Ссылка на верхний кадр колодки в вагоне
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorBrakeShoe.LowerBrakeShoeImageReference">
+            <summary>
+            Ссылка на нижний кадр колодки в вагоне
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportTechnovisorFrictionWedge.SequentialNumber">
+            <summary>
+            номер позиции в тележке
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.AxleN">
+            <summary>
+            номер оси в составе
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.SpeedAxle">
+            <summary>
+            Скорость прохода оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.SideA">
+            <summary>
+            сторона рельс A (левая или правая)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.SideB">
+            <summary>
+            сторона рельс B (левая или правая)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.VehicleAxleA">
+            <summary>
+            номер оси в вагоне (по рельсе A)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.VehicleAxleB">
+            <summary>
+            номер оси в вагоне (по рельсе B)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LWA">
+            <summary>
+            Вес колеса по стороне А
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LWB">
+            <summary>
+            Вес колеса по стороне B
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LbAax">
+            <summary>
+            Средний вес оси в тележке
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LbsAwA">
+            <summary>
+            Средний вес колеса в тележке (А)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LbsAwB">
+            <summary>
+            Средний вес колеса в тележке (B)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.Lwgn">
+            <summary>
+            Процент загрузки вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LSTSt">
+            <summary>
+            Неравномерность поперечной нагрузки, %
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LSTSs">
+            <summary>
+            Неравномерность поперечной нагрузки, но с минусом (видимо надо)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.LETE">
+            <summary>
+            Неравномерность продольной нагрузки, %
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACDynamicLeft">
+            <summary>
+            Ударная нагрузка колеса со стороны A, кН
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACDynamicRight">
+            <summary>
+            Ударная нагрузка колеса со стороны B, кН
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACStaticLeft">
+            <summary>
+            Статическая нагрузка колеса со стороны A, кН
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACStaticRight">
+            <summary>
+            Статическая нагрузка колеса со стороны B, кН
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.WheelImpactAlertA">
+            <summary>
+            Уровень тревоги колеса на стороне A
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.WheelImpactAlertB">
+            <summary>
+            Уровень тревоги колеса на стороне B
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACSummaryLeft">
+            <summary>
+            CУммарная нагрузка колеса на стороне A
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.ACSummaryRight">
+            <summary>
+            CУммарная нагрузка колеса на стороне В
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWCM.IsDataValid">
+            <summary>
+            Достоверность данных
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.FactBruttoWeightKg">
+            <summary>
+            Фактический вес, полученный аналитическим методом (НЕ выводить в UI ППСС)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.FactBruttoWeightKgIGT">
+            <summary>
+            Фактический вес, полученный нейросетевым методом (НЕ выводить в UI ППСС)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.FactBruttoWeightKgDisplay">
+            <summary>
+            𝑀б2 - Масса брутто при взвешивании, кг.
+            Фактический вес, который нужно показывать в UI оператору,
+            который округлён по методологии метролога до заданной цены деления согласно классификации точности весов.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.MeasurementErrorInKg">
+            <summary>
+            ∆𝑀б2 - Абсолютная погрешность массы брутто при взвешивании, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.MaxCapacityKg">
+            <summary>
+            𝑀гр - Грузоподъемность по документам, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.DeclBruttoWeightKg">
+            <summary>
+            𝑀б1 - Масса брутто по документам, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.DeclNettoWeightKg">
+            <summary>
+            𝑀н1 - Масса нетто по документам, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.DeclTareWeightKg">
+            <summary>
+            𝑀т - Масса тары по документам, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.LiftingCapacity">
+            <summary>
+            𝑀пгр2 - Превышение грузоподъемности при взвешивании, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.LiftingCapacityAlarm">
+            <summary>
+            Тревога 𝑀пгр2 - Превышение грузоподъемности при взвешивании вагона (даже на 1 кг) за вычетом погрешности.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.ExcessCargoWeight">
+            <summary>
+            𝑀откл - Отклонение массы нетто, кг.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightCarrying.ExcessCargoWeightAlarm">
+            <summary>
+            Тревога 𝑀откл - Отклонение массы нетто вагона в любую сторону за вычетом погрешности.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.IssueReportWeightImpactLoad.SideIssue">
+            <summary>
+                Сторона вагона по отношению к основному направлению движения по путям.
+                Т.е. вне зависимости от направления движения вагона, правой будет та сторона, которая едет
+                по правому рельсу относительно четности пути.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.Issues.TemporalIssueReport.OccurrenceTime">
+            <summary>
+            Gets or sets the issue occurrence time.
+            </summary>
+            <value>
+            The occurrence time.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TransmisionStation">
+            <summary>
+                Код станции передачи - 4 знака
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainNumber">
+            <summary>
+                Номер поезда - 4 знака
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainOriginStationCode">
+            <summary>
+                Код станции формирования поезда - 4 знака
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainSequentialNumber">
+            <summary>
+                Номер состава по порядку
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainDestinationStationCode">
+            <summary>
+                Код станции формирования поезда - 4 знака
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IsEnumeratedFromHead">
+            <summary>
+                Признак списывания состава с головы или с хвоста
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.Timestamp">
+            <summary>
+                Дата формирования состава (или отправки со станции или формирования)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainLength">
+            <summary>
+                Условная длина поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrainWeightBrutto">
+            <summary>
+                Масса брутто поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.CoveringCode">
+            <summary>
+                Код прикрытия
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IndexH1">
+            <summary>
+                Индексы негабаритности - первый знак
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IndexH2">
+            <summary>
+                Индексы негабаритности - второй знак
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IndexH3">
+            <summary>
+                Индексы негабаритности - третий знак
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IndexH4">
+            <summary>
+                Индексы негабаритности - четвертый знак
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.IsLively">
+            <summary>
+                Живность
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainDocument.TrackMark">
+            <summary>
+                Отметка о маршруте
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Domain.TrainReport">
+            <summary>
+                Основная доменная модель поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.RailOCRReportId">
+            <summary>
+                Идентификатор отчета по поезду в системе АРНВ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.ControlPoint">
+            <summary>
+                Описание КТ, через которую прошел поезд
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.Direction">
+            <summary>
+                Направление движения поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.Id">
+            <summary>
+                Идентификатор поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.IsApproved">
+            <summary>
+                Флаг обработки поезда оператором
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.IsAttentionRequired">
+            <summary>
+                Флаг наличия у поезда проблем
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.IsCommented">
+            <summary>
+                Флаг наличия у поезда комментариев оператора
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.LocomotivesCount">
+            <summary>
+                Количество локомотивов
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.StartedTime">
+            <summary>
+                Время прохода первой оси поезда через КТ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.State">
+            <summary>
+                Статус обработки поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.Supervisor">
+            <summary>
+                Сведения об операторе, проверившем поезд
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TechnovisorReportId">
+            <summary>
+                Идентификатор отчета по поезду в системе ТВ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TrainDocumentId">
+            <summary>
+                Идентификатор отчета с документацией по поезду от систем АСУСТ, АСОУП, Этран и т.д.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TrainDuplicateId">
+            <summary>
+            Gets or sets the train duplicate identifier.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TrainIndex">
+            <summary>
+                Индекс поезда
+                Формат строки:xxxx xxx xxxx
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TrainNumber">
+            <summary>
+                Графиковый номер поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.TrainType">
+            <summary>
+                Тип поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.VirtualWagons">
+            <summary>
+                Вагоны, которые ассоциированы с этим составом, но фактически в нем не обнаружены
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.Wagons">
+            <summary>
+                Вагоны поезда
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.TrainReport.WagonsCount">
+            <summary>
+                Количество вагонов в составе, не являющихся тяговыми единицами (т.е. не локомотивами или самоходками)
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Domain.TrainReport.AttachWagons(System.Collections.Generic.IList{CvLab.Common.Domain.WagonReport})">
+            <summary>
+                Ассоциирует набор вагонов с поездом и пересчитывает статистику по поезду
+            </summary>
+            <param name="wagons"></param>
+        </member>
+        <member name="M:CvLab.Common.Domain.TrainReport.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonAssets.TransverseDynamicsSvg">
+            <summary>
+                SVG строка в байтовом представлении
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonAssets.VeilSvg">
+            <summary>
+                SVG строка в байтовом представлении
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonAssets.AsoodSvg">
+            <summary>
+                SVG строка в байтовом представлении
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonAssets.AsoodLzd">
+            <summary>
+                SVG строка в байтовом представлении
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.SKUNumber">
+            <summary>
+                Инвертарный номер вагона - 8 знаков
+                Номера недействующих локомотивов, машин и механизмов передаются 7 знаками
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.RollerBearingsMark">
+            <summary>
+            Gets or sets the roller bearings mark.
+            </summary>
+            <value>
+            The roller bearings mark.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.CargoWeightTon">
+            <summary>
+            Gets or sets the cargo weight ton.
+            </summary>
+            <value>
+            The cargo weight ton.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.Destination">
+            <summary>
+            Gets or sets the destination.
+            </summary>
+            <value>
+            The destination.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.CargoCode">
+            <summary>
+               Код груза - 5 знаков
+            </summary>
+            <value>
+            The name of the cargo.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.Receiver">
+            <summary>
+            Gets or sets the receiver.
+            </summary>
+            <value>
+            The receiver.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.TrackCode">
+            <summary>
+            Gets or sets the trace unwork park.
+            </summary>
+            <value>
+            The trace unwork park.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.CoveringCode">
+            <summary>
+                Gets or sets the covering code.
+            </summary>
+            <value>
+            The covering code.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.Crossection">
+            <summary>
+            Gets or sets the crossection.
+            </summary>
+            <value>
+            The crossection.
+            1 - живность
+            3 - вагоны с негабаритным грузом
+            4 - цистерны из подсжатых и сжиженных газов
+            5 - длиннобазные вагоны
+            6 - вагоны, требующие осторожности при роспуске с горки ("перемещать осторожно, при маневрах не толкать")
+            7 - вагоны, не подлежащие пропуску через горку ("с горки не спускать")
+            9 - вагоны с грузом, не подлежащие пропуску через горку ("через горку не пропускать")
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.SealNumber">
+            <summary>
+            Gets or sets the seal number.
+            </summary>
+            <value>
+            The seal number.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.ContainersNumerator">
+            <summary>
+            Gets or sets the container aver numerator.
+            </summary>
+            <value>
+            The container aver numerator.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.ContainersDenominator">
+            <summary>
+            Gets or sets the container aver denominator.
+            </summary>
+            <value>
+            The container aver denominator.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.TareWeightTon">
+            <summary>
+            Gets or sets the tare weight ton.
+            </summary>
+            <value>
+            The tare weight ton.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.Note">
+            <summary>
+            Gets or sets the note.
+            </summary>
+            <value>
+            The note.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonDocument.BorderStation">
+            <summary>
+            Gets or sets the border station.
+            </summary>
+            <value>
+            The border station.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.AxlesCount">
+            <summary>
+                Количество осей
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.CargoName">
+            <summary>
+                Код перевозимого груза
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.Commentary">
+            <summary>
+                Комментарий оператора по вагону
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.DerailmentProbability">
+            <summary>
+                Оценка вероятности схода
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.DiagnosticCategory">
+            <summary>
+                Диагностическая категория вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.DistinctIndex">
+            <summary>
+                Раздельный порядковый номер для локомотивов и вагонов
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.FirstAxle">
+            <summary>
+                Время прохода первой оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.Id">
+            <summary>
+                Идентификатор вагона в базе данных
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.InfrastructureInfluence">
+            <summary>
+                Оценка влияния на инфраструктуру
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.Issues">
+            <summary>
+                Список диагностических отчетов по вагону
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.LastAxle">
+            <summary>
+                Время прохода последней оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.LoadState">
+            <summary>
+                Статус загрузки вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.MileageKm">
+            <summary>
+                Пробег в километрах
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.MileageToServiceKm">
+            <summary>
+                Пробег до ремонта, км
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.SKUNumber">
+            <summary>
+                Инвентарный номер вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.Speed">
+            <summary>
+                Gets or sets the speed m/s
+                При движении в прямом направлении - положительная,
+                при движении в обратном - отрицательная
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.TypeNumber">
+            <summary>
+                Тип вагона, определенный системой распознования по карте глубин
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.WagonIndex">
+            <summary>
+                Порядковый номер ПЕ (включая и локомотивы) в составе
+                Начинается с 1
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.WagonOrientation">
+            <summary>
+                Ориентация вагона по характерным признакам
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.WagonType">
+            <summary>
+                Тип ПЕ
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.OKPO">
+            <summary>
+               Код собственника их общероссийского классификатора предприятий и организаций
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Domain.WagonReport.Owner">
+            <summary>
+               Собственник
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPBaseStoredFrame.CameraIndex">
+            <summary>
+            Камера, с которой был получен кадр
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPBaseStoredFrame.TimeStamp">
+            <summary>
+            Метка времени с учетом времени кэширования
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPBaseStoredFrame.FrameCameraTime">
+            <summary>
+            Свойство задающее и возвращающее время кадра взятое с камеры
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPBaseStoredFrame.IsValid">
+            <summary>
+            Свойство задающее и возвращающее значение указывающее на то является ли данный кадр битым или нет.
+            True - кадр пришел с камеры без ошибок, False - кадр битый
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPDiagnosticObjects.RegionType">
+            <summary>
+            Тип объекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPDiagnosticObjects.Timestamp">
+            <summary>
+            Время прохождения объекта через точку контроля
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPDiagnosticObjects.Side">
+            <summary>
+            Сторона вагона (по ходу движения), на которой находится объект
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.KPP.KPPDiagnosticObjects.ToString">
+            <summary>
+            Возвращает строку, которая представляет текущий объект.
+            </summary>
+            <returns>
+            Строка, представляющая текущий объект.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="T:CvLab.Common.KPP.KPPExposureEvent">
+            <summary>
+            Класс, описывающий модель изменения экспозиции
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPExposureEvent.IsDay">
+            <summary>
+            Время экспозиции (день или ночь)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPExposureEvent.CreationTime">
+            <summary>
+                Время создания события
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPPositionType.StartTrain">
+            <summary>
+            Начало состава
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPPositionType.EndTrain">
+            <summary>
+            Конец состава
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPPositionType.Wagon">
+            <summary>
+            Вагон
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPPositionType.StartWagon">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPPositionType.EndWagon">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.Coupling">
+            <summary>
+            Сцепка вагона
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.Bush">
+            <summary>
+            Букса тележки
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.SpringGroup">
+            <summary>
+            Рессорный комплект
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.BrakeShoeTop">
+            <summary>
+            Тормозная колодка
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.BrakeShoeBottom">
+            <summary>
+            Тормозная колодка нижняя
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.Barber">
+            <summary>
+            Фрикционый клин тележки Барбер
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.FrameKPP">
+            <summary>
+            кадры КПП
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.FirstAxle">
+            <summary>
+            Первая ось вагона
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.AutoRegulator">
+            <summary>
+            Авторегулятор
+            </summary>
+        </member>
+        <member name="F:CvLab.Common.KPP.KPPRegionOfDiagnosticTypes.AutoRegime">
+            <summary>
+            Авторежим
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPStoredFrame.JpegImage">
+            <summary>
+            Исходное изображение
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.KPP.KPPStoredFrame.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.DistinctNumber">
+            <summary>
+                Порядковый номер вагона. Начинается с 1 и идет по возрастающей.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.StartTime">
+            <summary>
+            Время начало движение вагона через точку контроля (ТК)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.EndTime">
+            <summary>
+            Время окончание движение вагона через ТК
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.AxlesCount">
+            <summary>
+            Количество осей вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.UnitType">
+            <summary>
+            Тип подвижной единицы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.Speed">
+            <summary>
+            Скорость вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPTrainUnit.DiagnosticObject">
+            <summary>
+            Список моделей представления диагностируемых объектов
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.KPP.KPPTrainUnit.ToString">
+            <summary>
+            Возвращает строку, которая представляет текущий объект.
+            </summary>
+            <returns>
+            Строка, представляющая текущий объект.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.ControlPointId">
+            <summary>
+            Контрольная точка, с которой пришло событие
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.EventPositionType">
+            <summary>
+            Тип передаваемого события
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.TrainUnit">
+            <summary>
+            Описание подвижной единицы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.Direction">
+            <summary>
+            Направление движения
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.CreationTime">
+            <summary>
+            Время создания обьекта
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.KPP.KPPWagonInformationEvent.TrainId">
+            <summary>
+            ID текущего состава
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.MjpegStreaming.MJPEGServer.MjpegWriter">
+            <summary>
+            Provides a stream writer that can be used to write images as MJPEG
+            or (Motion JPEG) to any stream.
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.MjpegStreaming.StreamSvgRenderer.ISvgStripper">
+            <summary>
+            Класс для очистки svg от невидимых кадров
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.Resource1">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.script">
+             <summary>
+               Ищет локализованную строку, похожую на
+            &lt;script&gt;
+                &lt;![CDATA[
+            
+                 function pan1(evt)
+                 {
+                        if ( window.svgDocument == null )
+                        {
+                            svgDoc = evt.target.ownerDocument;
+                        }
+                        BlockVertical1ODForGraphics = svgDoc.getElementById(&quot;svg_vertical&quot;);
+                        BlockVertical1ODForText = svgDoc.getElementById(&quot;svg_vertical2&quot;);
+                        BlockHorizontalODForGraphics = svgDoc.getElementById(&quot;svg_horizontal&quot;);
+                        BlockHorizontalODForText = svgDoc.getElementById(&quot;svg_horizonta [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.style">
+             <summary>
+               Ищет локализованную строку, похожую на &lt;style&gt;
+               .button_down {
+            		    fill:           	#3072b3;
+            			stroke:   			#0C2C84;
+            			stroke-miterlimit:	6;
+            			stroke-linecap:		round;
+                }
+               .button_up {
+            		    fill:           	#F5F5F5;
+            			stroke:   			#0C2C84;
+            			stroke-miterlimit:	6;
+            			stroke-linecap:		round;
+                }
+                .button_down:hover {
+                cursor: pointer;
+            }
+            .button_up:hover {
+                cursor: pointer;
+            }
+            
+                rect.ViewCameraClass {
+                    opacity:0.01;
+                    fill:#ff0000;
+                    fill-opacity:0.01;
+                    stroke:#ff0000;
+              [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.telega">
+             <summary>
+               Ищет локализованную строку, похожую на 1464;-917;1475;-846;1497;-829;1504;-818;1497;-805;568;-805;554;-807;568;-826;584;-836;590;-917;1464;-917;
+            1464;-917;590;-917;829;-917;774;-984;774;-1108;851;-1204;851;-1276;875;-1276;875;-1260;900;-1260;900;-1168;1110;-1168;1110;-1275;1126;-1279;1125;-1261;1185;-1199;1253;-1199;1253;-1126;1330;-1126;1355;-1110;1368;-1084;1367;-1056;1367;-918;1464;-917;
+            1369;-1002;1359;-986;1351;-979;1330;-976;1184;-976;962;-999;963;-1095;1187;-1125;1253;-1126;1330;-1126;1355;-1110;1368;-1084;1369;-1002;
+            875;-1260;875;-11 [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.telega1">
+             <summary>
+               Ищет локализованную строку, похожую на &lt;path class=&quot;DotLineClass&quot; d=&quot; M 0,1200 v 4000 M 500,1100 v 4100 M -500,1100 v 4000 &quot;  /&gt;
+            &lt;path class=&quot;DotLineClass&quot; d=&quot;  M 1500,1200 v 4200 M -1500,1200 v 4200 M 2000,1100 v 4100 M -2000,1100 v 4100  M 2500,1200 v 4200 M -2500,1200 v 4200 &quot;  /&gt;
+            &lt;path class=&quot;DotLineClass&quot; d=&quot; M -2500,1200 h 1000 M -2500,5200 h 1000 M 1500,1200 h 1000 M 1500,5200 h 1000&quot;  /&gt;
+            &lt;path stroke = &quot;rgb(0,0,0)&quot; stroke-width=&quot;13&quot; d =&quot; M -1000,5200 L 1000,5200 1000,1200 -1000,1200 -1000,5200&quot;  /&gt;
+            &lt;path stroke = &quot;rgb(0,0,0)&quot; stroke- [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.telega2">
+             <summary>
+               Ищет локализованную строку, похожую на &lt;path d=&quot;M 2000,3200 v -300 h -4000 v 300 h 4000&quot; /&gt;
+            &lt;path d=&quot;m -2000,3200 h -120 l -100,60 -132.0743,-0.4608 51.8421,-89.5845 L -2350,3060 l -2.0743,199.5392 -49.9977,-37.5125 0.2287,-121.6576 L -2350,3060 h 150 l 100,60 h 100&quot; /&gt;
+            &lt;path d=&quot;m 2000,3120 h 120 l 100,-60 166.6361,-1.3825 L 2450,3080 l -1.6123,146.1741 -62.6744,36.4051 0.9228,-203.9617 -50.2298,106.6361 49.307,97.3256 L 2200,3260 2100,3200 h -100&quot;      /&gt;
+            
+            
+            &lt;path d=&quot;m -1857.984,3454.9884 h -17.269 l -10.3614,-125.2003 12.9518,-13.8152 214. [остаток строки не уместился]&quot;;.
+             </summary>
+        </member>
+        <member name="P:CvLab.Common.Resource1.trainpix">
+            <summary>
+              Поиск локализованного ресурса типа System.Byte[].
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.Bogie.MsgTriangularDatasetReady.DatasetTimestamp">
+            <summary>
+             Время первой оси
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.Bogie.MsgTriangularDatasetReady.TrainId">
+            <summary>
+                Id поезда ППСС, с которым связан данный отчет
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.Bogie.MsgTriangularDatasetReady.DatasetEndpointAddress">
+            <summary>
+                Идентификатор поезда ППСС, с которым связан данный отчет
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgKTSM03TReportIncome">
+            <summary>
+                Повторные запуск саги
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgKTSM03TReportIncome.SagaId">
+            <summary>
+            TrainId
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgLazerStockActualTrain">
+            <summary>
+                Сообщение, содержащее в себе информацию о проходящем поезде в режиме реального времени
+                Отправляется после каждого вагона
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted">
+            <summary>
+                Indicates the capture completion of the commercial inspection camera
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted.TrainId">
+            <summary>
+                PPSS database train identifier
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted.ControlPoint">
+            <summary>
+                ControlPoint identifier through which the train passed
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted.CameraIndex">
+            <summary>
+                PPSS camera index
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted.StocksCount">
+            <summary>
+                Stocks count include locomotives and wagons
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureCompleted.Started">
+            <summary>
+                Train first axle time
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureStarted">
+            <summary>
+                Indicates the capture start of the commercial inspection camera
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureStarted.TrainId">
+            <summary>
+                PPSS database train identifier
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureStarted.ControlPoint">
+            <summary>
+                ControlPoint identifier through which the train passed
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockCameraCaptureStarted.CameraIndex">
+            <summary>
+                PPSS camera index
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockImageSetReady.TrainId">
+            <summary>
+                Идентификатор поезда в базе ППСС
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockImageSetReady.StocksCount">
+            <summary>
+                Количество ПЕ включая локомотивы и вагоны
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockImageSetReady.ControlPoint">
+            <summary>
+                Контрольная точка
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgLazerStockImageSetReady.Started">
+            <summary>
+                Время первой оси состава
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgLazerStockTrainUpdate">
+            <summary>
+                Класс для упрощения работы с дженериками
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.ServiceBus.MsgLazerStockTrainUpdate.Create``1(System.Int64)">
+            <summary>
+                Оповещает об изменениях в показаниях какой-либо подсистем диагностики
+            </summary>
+            <param name="trainId">Идентификатор поезда в ППСС</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.ServiceBus.MsgLazerStockTrainUpdate.Create(CvLab.Common.Core.Enums.IssueCategory,System.Int64)">
+            <summary>
+                Оповещает об изменениях в показаниях какой-либо подсистем диагностики
+            </summary>
+            <param name="issueCategory">Тип подсистемы, у которой обновились показания</param>
+            <param name="trainId">Идентификатор поезда в ППСС</param>
+            <returns></returns>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgLazerStockTrainUpdate`1">
+            <summary>
+                Оповещение об изменениях в конкретном поезде по конкретной подсистеме
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgOperatorApprovedTrain">
+            <summary>
+                Сообщение о том, что оператор совершил необходимые действия с поездом
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgPrevious3dInspectionReady">
+            <summary>
+                Сообщение о готовности моделей предыдущего 3d осмотра поезда (АСКМ ИКО)
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgPrevious3dInspectionReady.TrainId">
+            <summary>
+                Идентификатор поезда в системе ППСС
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgPrevious3dInspectionReady.WagonIndexes">
+            <summary>
+                Порядковые индексы вагонов, по которым готовы модели
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgSKVDNReportIncome">
+            <summary>
+                Оповещение о том, что данные от СКВДН нам переданы
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgSKVDNReportIncome.ControlPointNumber">
+            <summary>
+            Номер контрольной точки в нашей системе.
+            </summary>
+            <value>
+            The control point number.
+            </value>
+        </member>
+        <member name="P:CvLab.Common.ServiceBus.MsgSKVDNReportIncome.Report">
+            <summary>
+            Отчет переданный СКВДН
+            </summary>
+            <value>
+            The report.
+            </value>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.MsgTrainAllowedToBeShownAtUI">
+            <summary>
+                Системное оповещение для фронта об обновлениях в поезде
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.TrainEvents.MsgLazerStockTrainReady">
+            <summary>
+                Оповещение о том, что поезд имеет готовую структуру записанную в базу
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.ServiceBus.TrainEvents.MsgLazerStockTrainStart">
+            <summary>
+                Сообщение о начале обработки поезда системой ППСС
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Service.DbService.IDbServiceQueries.FilterTrains(CvLab.Common.Core.DTO.TrainReportQuery)">
+            <summary>
+            Filter train on query.
+            </summary>
+            <param name="query">The query.</param>
+            <returns>List of concise reports of trains.</returns>
+        </member>
+        <member name="M:CvLab.Common.Service.DbService.IDbServiceQueries.FilterTrainStatistics(CvLab.Common.Core.DTO.TrainStatisticsQuery)">
+            <summary>
+                Getting statistics on issues for the period.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.DbService.IDbServiceQueries.OverloadWagonFilter(CvLab.Common.Core.DTO.TrainReportQuery)">
+            <summary>
+                Overloads the wagon filter.
+            </summary>
+            <param name="query">The query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.DbService.WagonIssuesOperation.CreateAddOperation(System.Int64,System.Int32,CvLab.Common.Domain.Issues.IssueReport)">
+            <summary>
+                Создает операцию добавления отчета для вагона
+            </summary>
+            <param name="trainId"></param>
+            <param name="wagonIndex"></param>
+            <param name="issue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.DbService.WagonIssuesOperation.CreateDeleteOperation(System.String,System.Int64,System.Int32)">
+            <summary>
+                Создает операцию удаления всех отчетов по тревогам
+            </summary>
+            <param name="issueReportName"></param>
+            <param name="trainId"></param>
+            <param name="wagonIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.AddUser(CvLab.LazerStockCtrl.Common.Domain.User)">
+            <summary>
+                Adds new user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.ApproveTrain(CvLab.Common.Domain.BaseUser,System.Int64)">
+            <summary>
+                ApproveTrain
+            </summary>
+            <param name="user">If null then train approval is revoked</param>
+            <param name="trainId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetConciseLastTrain">
+            <summary>
+            Gets the сoncise last train.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetConciseLastTrainByTrainIndex(System.String)">
+            <summary>
+                Возвращает последний поезд с указанным индексом
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetConciseTrain(System.Int64)">
+            <summary>
+            Gets the сoncise train.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetConciseTrainReports(System.String)">
+            <summary>
+                Возвращает краткие отчеты по поездам (без информации по вагонам) по индексу поезда
+            </summary>
+            <param name="trainIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetConciseTrains(System.Int32,System.Int32)">
+            <summary>
+            Gets the сoncise trains.
+            </summary>
+            <param name="skip">The skip.</param>
+            <param name="take">The take.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetDetailedTrains(System.Int32,System.Int32)">
+            <summary>
+            Gets the detailed trains.
+            </summary>
+            <param name="skip">The skip.</param>
+            <param name="take">The take.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetFullTrain(System.Int64)">
+            <summary>
+            Gets the full train without assets and images
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetFullTrainByIndex(System.String)">
+            <summary>
+                Gets the full train without assets and images
+            </summary>
+            <param name="trainIndex">The train index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetUser(System.String,System.String)">
+            <summary>
+            Gets the user.
+            </summary>
+            <param name="login">The login.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetWagon(System.Int64,System.Int64)">
+            <summary>
+                Gets the wagon.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <param name="wagonIndex">Index of the wagon.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetWagonHistory(System.String)">
+            <summary>
+            Gets the wagon history.
+            </summary>
+            <param name="wagonSKU">The wagon sku.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.ModifyIssues(CvLab.Common.Service.DbService.WagonIssuesOperation[])">
+            <summary>
+                Добавляет, удаляет, изменяет отчеты по вагону в поезде
+            </summary>
+            <param name="wagonIssuesOperations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.SetTrainIndex(System.Int64,System.String,System.String)">
+            <summary>
+            Sets the index of the train.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <param name="trainIndex">Index of the train.</param>
+            <param name="trainNumber" />
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.SetTrainIndex(System.Int64,System.String)">
+            <summary>
+            Sets the index of the train.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <param name="trainIndex">Index of the train.</param>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.SetWagonSKUNumber(System.Int64,System.Int32,System.String,System.Boolean,System.String)">
+            <summary>
+            Sets the wagon sku number.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <param name="wagonIndex">Index of the wagon.</param>
+            <param name="wagonSKUNumber">The wagon sku number.</param>
+            <param name="isManual" />
+            <param name="commentary" />
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.SetWagonsSKUNumber(System.Int64,System.Guid,System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.Int32,System.String}})">
+            <summary>
+            Sets the wagon sku number.
+            </summary>
+            <param name="trainId">The train identifier.</param>
+            <param name="arnvReportId">Идентификатор отчета в системе АРНВ</param>
+            <param name="wagonNumbers"></param>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.UpsertTrainReport(CvLab.Common.Domain.TrainReport)">
+            <summary>
+                Stores the blank train report.
+                Images and assets are not stored
+            </summary>
+            <param name="trainReport">The train report.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.StoreBroadcastMessage(CvLab.Common.Domain.BroadcastMessage,System.Boolean)">
+            <summary>
+                Сохраняет в базу запись о новом оповещении
+            </summary>
+            <param name="broadcastMessage"></param>
+            <param name="isBanner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetValidBroadcastMessages(System.DateTime)">
+            <summary>
+                Возвращает все оповещения, актуальные на момент времени <paramref name="targetTimestamp"/>
+            </summary>
+            <param name="targetTimestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetValidBroadcastMessages(System.Int32,System.Int32,CvLab.Common.Core.Enums.BroadcastMessageType)">
+            <summary>
+                Возвращает оповещения, в количестве <paramref name="take"/>, пропуская <paramref name="skip"/>
+            </summary>
+            <param name="messageType"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.GetBroadcastNotifications(System.Int32)">
+            <summary>
+                Возвращает последние оповещения в количестве <paramref name="count"/>.
+                По умолчанию - 20 сообщений.
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbService.DeleteBroadcastMessage(System.Int64)">
+            <summary>
+                Удаляет баннер из базы
+            </summary>
+            <param name="messageId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CvLab.Common.Service.IDbServiceBinary">
+            <summary>
+                Интерфейс сервиса доступа к хранилищу бинарных данных
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbServiceBinary.CommitBinaryDatabase(System.Int64)">
+            <summary>
+                Производит коммит открытой транзакции для того, чтобы данные по изображениям сдампились на диск
+            </summary>
+            <param name="trainId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CvLab.Common.Service.IDbServiceBinary.AssignImagesToWagon(System.Int64,System.Int32,System.Int64[])">
+            <summary>
+                Назначает указанные изображения в соответствующем поезде соответствующему вагону
+            </summary>
+            <param name="trainId"></param>
+            <param name="wagonIndex"></param>
+            <param name="imageIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CvLab.Common.Service.IPrognosisService">
+            <summary>
+            IPrognosisService
+            </summary>
+        </member>
+        <member name="M:CvLab.Common.Service.IPrognosisService.BuildChart(System.String,CvLab.Common.Core.Enums.IssueCategory)">
+            <summary>
+            Builds the chart.
+            </summary>
+            <param name="skuNumber">The sku number.</param>
+            <param name="issueCategory">The issue category.</param>
+            <returns></returns>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchData.LatchInSnapped">
+            <summary>
+            true - закидка защелкнута, false- закидка не защелкнута
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchData.Side">
+            <summary>
+            Позиция камеры в рамках ППСС на которой нашли закидку
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchData.IsValidReport">
+            <summary>
+            true - Камера обработана корректно, false - отчет невалидный
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.WagonLatch.WagonLatchReport">
+            <summary>
+            Отчет обработки сервиса закидок
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchReport.TrainId">
+            <summary>
+                Идентификатор поезда в базе ППСС
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchReport.ControlPoint">
+            <summary>
+                Контрольная точка
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchReport.WagonIndex">
+            <summary>
+            Идентификатор вагона в составе, начиная с локомотива
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchReport.LatchResults">
+            <summary>
+            репорты по каждой камеры
+            </summary>
+        </member>
+        <member name="T:CvLab.Common.WagonLatch.WagonLatchTask">
+            <summary>
+            Запрос на обработку вагона
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchTask.TrainId">
+            <summary>
+                Идентификатор поезда в базе ППСС
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchTask.ControlPoint">
+            <summary>
+                Контрольная точка
+            </summary>
+        </member>
+        <member name="P:CvLab.Common.WagonLatch.WagonLatchTask.WagonIndex">
+            <summary>
+            Идентификатор вагона в составе, начиная с локомотива
+            </summary>
+        </member>
+        <member name="T:CvLab.LazerStockCtrl.Common.Domain.Issues.IssueReportKTSM03T">
+            <summary>
+                Отчет системы КТСМ03Т - Нагрев тормозной системы - СТД
+            </summary>
+            <seealso cref="T:CvLab.Common.Domain.Issues.IssueReport" />
+        </member>
+        <member name="P:CvLab.LazerStockCtrl.Common.Domain.Issues.IssueReportKTSM03T.AxleIndexAtWagon">
+            <summary>
+                Номер оси
+            </summary>
+        </member>
+        <member name="T:CvLab.LazerStockCtrl.Common.Domain.User">
+            <summary>
+                Модель пользователя ППСС, содержащая сведения о его роли, уровнях доступа к методам API и т.д.
+            </summary>
+        </member>
+        <member name="P:CvLab.LazerStockCtrl.Common.Domain.User.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:CvLab.LazerStockCtrl.Common.Domain.User.Login">
+            <summary>
+                User login
+            </summary>
+        </member>
+        <member name="P:CvLab.LazerStockCtrl.Common.Domain.User.Password">
+            <summary>
+                User password
+            </summary>
+        </member>
+        <member name="P:CvLab.LazerStockCtrl.Common.Domain.User.AccessFilter">
+            <summary>
+                Regex to allowed methods for user
+            </summary>
+        </member>
+    </members>
+</doc>

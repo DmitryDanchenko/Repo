@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SendMessToRabbitLocal</name>
+    </assembly>
+    <members>
+        <member name="P:SendMessToRabbitLocal.DTO.Axle.AxleId">
+            <summary>
+            Присвоеный индекс оси в вагоне (в каждом вагоне индексация с 0) 
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Axle.DistanceToThePreviousAxis">
+            <summary>
+            Расстояние до предыдущей оси, м
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Axle.LeftWheel">
+            <summary>
+            Информация по левому колесу
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Axle.RightWheel">
+            <summary>
+            Информация по правому колесу
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonIndex">
+            <summary>
+            Индекс каждой подвижной единицы (номерация с 0)
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonNumber">
+            <summary>
+            Номер грузового вагона
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonType">
+            <summary>
+            Тип подвижной единицы
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.AccuracyClass">
+            <summary>
+            Класс точности результата измерения массы вагона 
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonWeight">
+            <summary>
+            Масса вагона, т (округленная до цены деления)
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.MeasurementError">
+            <summary>
+            Допускаемая погрешность измерения массы вагона
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonSpeed">
+            <summary>
+            Скорость вагона, км/ч
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.WagonAcceleration">
+            <summary>
+            Ускорение вагона, м/с2
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.Axles">
+            <summary>
+            Инвормация по осям
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.DifferenceLeftAndRightWheels">
+            <summary>
+            Относительная разность сумм колес между левой и правой стороной ((сумма левых - сумма правых)/общую сумму)
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.ReasonsIsNotNormalized">
+            <summary>
+            Причины почему погрешность не нормируется (в случае если погрешность не нормируются)
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wagon.InfoReasonsIsNotNormalized">
+            <summary>
+            Расшифровка причины ненормируемой погрешности с указанием влияющих факторов
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.DTO.Wheel.WheelLoad">
+            <summary>
+             Нагрузка на колесо, кН (с округлением до цены деления) 
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.ModificationOfSi">
+            <summary>
+            Модификация средства измерения
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.FifNumber">
+            <summary>
+            номер ФИФ (Федеральный информационный фонд по обеспечению единства измерений)
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.ScaleNumber">
+            <summary>
+            Заводской номер весов
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.VerificationDate">
+            <summary>
+            Дата поверки весов
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.DateExpiration">
+            <summary>
+            Дата окончаня срока действительности поверки
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.TrainId">
+            <summary>
+            Уникальный Id состава
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.TrainPassageDate">
+            <summary>
+             Дата и время проезда состава
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.DirectionOfMovement">
+            <summary>
+            Направление движения состава
+            </summary>
+        </member>
+        <member name="P:SendMessToRabbitLocal.Train.Wagons">
+            <summary>
+             Информация о вагонах
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.None">
+            <summary>
+            Дефолтное значение
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.UndefinedClass">
+            <summary>
+            Нормализация отсутствует вследствии ошибки
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.Class1">
+            <summary>
+            Класс точности 1
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.Class2">
+            <summary>
+            Класс точности 2
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.Class3">
+            <summary>
+            Класс точности 3
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.Class4">
+            <summary>
+            Класс точности 4
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Accuracy.Undefined">
+            <summary>
+            Класс точности не определенн 
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Direction.None">
+            <summary>
+            Дефолтное значение
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Direction.Forvard">
+            <summary>
+            Движение в прямом направлении
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Direction.Reverse">
+            <summary>
+            Движение в обратном направлении
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.Direction.Undefined">
+            <summary>
+            Направление движения не определенно
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.None">
+            <summary>
+            Дефолтное значение
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.ExceedingSpeedLimit">
+            <summary>
+            Выход  за пределы диапазона рабочих скоростей
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.UnevenPassage">
+            <summary>
+            Неравномерность проезда
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.SurfaceDefect">
+            <summary>
+            Наличие дефекта на поверхности катания (ДПК)
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.ExceedingTemperature">
+            <summary>
+            Выход за пределы диапазона рабочих температур 
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.ReasonsIsNotNormalized.ExceedingMaxWagonsWeight">
+            <summary>
+            Превышение максимальной массы вагона
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.UnitType.None">
+            <summary>
+            Дефолтное значение
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.UnitType.Locomotive">
+            <summary>
+            Локомотив
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.UnitType.Wagon">
+            <summary>
+            Вагон
+            </summary>
+        </member>
+        <member name="F:SendMessToRabbitLocal.Enums.UnitType.Undefined">
+            <summary>
+            Неопределенный тип подвижной единицы
+            </summary>
+        </member>
+    </members>
+</doc>
